@@ -101,7 +101,7 @@ public class ShopManagerScript : MonoBehaviour
                         itemRectTransform.anchoredPosition = inventorySlots[i].anchoredPosition;
 
                         // Set the desired scale of the item image
-                        itemRectTransform.localScale = new Vector3(4, 4, 4);
+                        itemRectTransform.localScale = new Vector3(5, 5, 5);
 
                         // Mark the slot as occupied
                         slotsOccupied[i] = true;
