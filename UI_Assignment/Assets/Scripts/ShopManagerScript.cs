@@ -85,7 +85,6 @@ public class ShopManagerScript : MonoBehaviour
             }
         }
     }
-    /*
     private void SpawnItemImage(int itemID, GameObject itemImagePrefab)
     {
         if (itemImagePrefab != null && inventoryCanvas != null)
@@ -102,53 +101,10 @@ public class ShopManagerScript : MonoBehaviour
                         itemRectTransform.anchoredPosition = inventorySlots[i].anchoredPosition;
 
                         // Set the desired scale of the item image
-                        itemRectTransform.localScale = new Vector3(6, 6, 6);
+                        itemRectTransform.localScale = new Vector3(4, 4, 4);
 
                         // Mark the slot as occupied
                         slotsOccupied[i] = true;
-
-                        // Optionally: Store the item image in the slot for later reference
-                        break;
-                    }
-                    else
-                    {
-                        Debug.LogError("The instantiated item image does not have a RectTransform component.");
-                    }
-                }
-            }
-        }
-        else
-        {
-            Debug.LogError("ItemImagePrefab or InventoryCanvas is not assigned.");
-        }
-    }
-    */
-    private void SpawnItemImage(int itemID, GameObject itemImagePrefab)
-    {
-        if (itemImagePrefab != null && inventoryCanvas != null)
-        {
-            for (int i = 0; i < inventorySlots.Length; i++)
-            {
-                if (!slotsOccupied[i])
-                {
-                    GameObject itemImage = Instantiate(itemImagePrefab, inventoryCanvas.transform);
-                    RectTransform itemRectTransform = itemImage.GetComponent<RectTransform>();
-                    if (itemRectTransform != null)
-                    {
-                        // Set the position of the item image to the corresponding slot position
-                        itemRectTransform.anchoredPosition = inventorySlots[i].anchoredPosition;
-
-                        // Set the desired scale of the item image
-                        itemRectTransform.localScale = new Vector3(6, 6, 6);
-
-                        // Mark the slot as occupied
-                        slotsOccupied[i] = true;
-
-                        // Ensure the draggable component is set up
-                        if (!itemImage.GetComponent<DraggableItem>())
-                        {
-                            itemImage.AddComponent<DraggableItem>();
-                        }
 
                         // Optionally: Store the item image in the slot for later reference
                         break;
