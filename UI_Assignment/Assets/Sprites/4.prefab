@@ -131,6 +131,18 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 63dbab13ad7cfbf4db2dc1c767975fdf, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  snapPositions:
+  - {fileID: 8963199395693820359, guid: d6e06574e1776424aaeed5e39f73f887, type: 3}
+  - {fileID: 2068350731049530223, guid: 4800065dc51883d4badb569ce37665f3, type: 3}
+  - {fileID: 4393866709457913771, guid: 364e3d0740d30bb4e808a5fbbf89b9e3, type: 3}
+  - {fileID: 930146847862330635, guid: 44991a4010baa6447a8c4d1fbe704226, type: 3}
+  - {fileID: 6717808459387279118, guid: 520d96fe5e2b10448806c6ae75240957, type: 3}
+  - {fileID: 1302581468089239181, guid: 02ff4ffa8a1a44840ae49410212f27ed, type: 3}
+  - {fileID: 2047390764497969122, guid: a905367df25d5d14fa373a1f2ed6eabb, type: 3}
+  - {fileID: 6593965168447546921, guid: f98aabc97315e1a40aae0d2bc1f8ed4b, type: 3}
+  - {fileID: 1788386586022614212, guid: 69c80b7bc1a5d264cbdc20a7bcc35dcb, type: 3}
+  - {fileID: 3622324035795632335, guid: a3cab0865dc36c645aac1185292408fc, type: 3}
+  - {fileID: 2279437723812029728, guid: 44cef67324b952c4e91607b5ff5e7bc8, type: 3}
 --- !u!61 &2319586965449336733
 BoxCollider2D:
   m_ObjectHideFlags: 0
